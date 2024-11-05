@@ -1,0 +1,98 @@
+<div class="StepIndicator">
+  <div class="StepItem StepItem--completed">
+    <div class="StepItem-counter StepItem-counter-completed">1</div>
+    <div class="StepItem-name StepItem-name-completed">Create</div>
+  </div>
+  <div class="StepItem StepItem--completed">
+    <div class="StepItem-counter StepItem-counter-completed">2</div>
+    <div class="StepItem-name StepItem-name-completed">Get Started</div>
+  </div>
+  <div class="StepItem StepItem--active">
+    <div class="StepItem-counter StepItem-counter-active">3</div>
+    <div class="StepItem-name StepItem-name-active">Product Info</div>
+  </div>
+  <div class="StepItem">
+    <div class="StepItem-counter">4</div>
+    <div class="StepItem-name">Use Case</div>
+  </div>
+  <div class="StepItem">
+    <div class="StepItem-counter">5</div>
+    <div class="StepItem-name">Documentation</div>
+  </div>
+  <div class="StepItem">
+    <div class="StepItem-counter">6</div>
+    <div class="StepItem-name">Credentials</div>
+  </div>
+</div>
+
+<style>
+  .StepIndicator {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .StepItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  .StepItem::after {
+    position: absolute;
+    content: "";
+    border-bottom: 4px solid #bdbfc0;
+    width: 100%;
+    top: 1.9rem;
+    left: 50%;
+    z-index: 2;
+  }
+  .StepItem:last-child::after {
+    content: none;
+  }
+
+  .StepItem--completed::after {
+    border-color: #8b83c3;
+  }
+
+  .StepItem-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #cbcccd, #929496);
+    margin-bottom: 6px;
+    border: 1px solid #f7f7f7;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .StepItem-counter-active {
+    border-color: #5a43c9;
+    background: white;
+    color: #5a43c9;
+  }
+
+  .StepItem-counter-completed {
+    background: linear-gradient(to right, #5b43c9, #9f69d8);
+    color: white;
+  }
+
+  .StepItem-name {
+    color: #7d8082;
+  }
+
+  .StepItem-name-active {
+    font-weight: 500;
+    color: #5a43c9;
+  }
+
+  .StepItem-name-completed {
+    color: #5a43c9;
+  }
+</style>

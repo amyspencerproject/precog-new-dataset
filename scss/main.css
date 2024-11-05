@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -145,8 +146,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -155,8 +155,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -164,9 +163,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -174,9 +173,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -185,9 +184,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -231,8 +230,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -240,8 +239,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -249,7 +248,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -257,7 +256,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -306,95 +305,79 @@ template {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 100;
-  src: local("Roboto Thin"), local("Roboto-Thin"),
-    url("fonts/Roboto-Thin.woff2") format("woff2");
+  src: local("Roboto Thin"), local("Roboto-Thin"), url("fonts/Roboto-Thin.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-style: italic;
   font-weight: 100;
-  src: local("Roboto ThinItalic"), local("Roboto-ThinItalic"),
-    url("fonts/Roboto-ThinItalic.woff2") format("woff2");
+  src: local("Roboto ThinItalic"), local("Roboto-ThinItalic"), url("fonts/Roboto-ThinItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: local("Roboto Light"), local("Roboto-Light"),
-    url("fonts/Roboto-Light.woff2") format("woff2");
+  src: local("Roboto Light"), local("Roboto-Light"), url("fonts/Roboto-Light.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-style: italic;
   font-weight: 300;
-  src: local("Roboto LightItalic"), local("Roboto-LightItalic"),
-    url("fonts/Roboto-LightItalic.woff2") format("woff2");
+  src: local("Roboto LightItalic"), local("Roboto-LightItalic"), url("fonts/Roboto-LightItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto Regular"), local("Roboto-Regular"),
-    url("fonts/Roboto-Regular.woff2") format("woff2");
+  src: local("Roboto Regular"), local("Roboto-Regular"), url("fonts/Roboto-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-style: italic;
   font-weight: 400;
-  src: local("Roboto Regular Italic"), local("Roboto-RegularItalic"),
-    url("fonts/Roboto-RegularItalic.woff2") format("woff2");
+  src: local("Roboto Regular Italic"), local("Roboto-RegularItalic"), url("fonts/Roboto-RegularItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: local("Roboto Medium"), local("Roboto-Medium"),
-    url("fonts/Roboto-Medium.woff2") format("woff2");
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("fonts/Roboto-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-style: italic;
   font-weight: 500;
-  src: local("Roboto Medium Italic"), local("Roboto-MediumItalic"),
-    url("fonts/Roboto-MediumItalic.woff2") format("woff2");
+  src: local("Roboto Medium Italic"), local("Roboto-MediumItalic"), url("fonts/Roboto-MediumItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"),
-    url("fonts/Roboto-Bold.woff2") format("woff2");
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("fonts/Roboto-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-style: italic;
   font-weight: 700;
-  src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"),
-    url("fonts/Roboto-BoldItalic.woff2") format("woff2");
+  src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"), url("fonts/Roboto-BoldItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: local("Roboto Black"), local("Roboto-Black"),
-    url("fonts/Roboto-Black.woff2") format("woff2");
+  src: local("Roboto Black"), local("Roboto-Black"), url("fonts/Roboto-Black.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-style: italic;
   font-weight: 900;
-  src: local("Roboto Black Italic"), local("Roboto-BlackItalic"),
-    url("fonts/Roboto-BlackItalic.woff2") format("woff2");
+  src: local("Roboto Black Italic"), local("Roboto-BlackItalic"), url("fonts/Roboto-BlackItalic.woff2") format("woff2");
 }
 /*!
  * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-.fa,
-.fab,
-.fal,
-.far,
-.fas {
+.fa, .fab, .fal, .far, .fas {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -495,19 +478,11 @@ template {
   float: right;
 }
 
-.fa.fa-pull-left,
-.fab.fa-pull-left,
-.fal.fa-pull-left,
-.far.fa-pull-left,
-.fas.fa-pull-left {
+.fa.fa-pull-left, .fab.fa-pull-left, .fal.fa-pull-left, .far.fa-pull-left, .fas.fa-pull-left {
   margin-right: 0.3em;
 }
 
-.fa.fa-pull-right,
-.fab.fa-pull-right,
-.fal.fa-pull-right,
-.far.fa-pull-right,
-.fas.fa-pull-right {
+.fa.fa-pull-right, .fab.fa-pull-right, .fal.fa-pull-right, .far.fa-pull-right, .fas.fa-pull-right {
   margin-left: 0.3em;
 }
 
@@ -551,8 +526,7 @@ template {
   transform: scaleY(-1);
 }
 
-.fa-flip-horizontal.fa-flip-vertical,
-.fa-flip-vertical {
+.fa-flip-horizontal.fa-flip-vertical, .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
 }
 
@@ -560,11 +534,7 @@ template {
   transform: scale(-1);
 }
 
-:root .fa-flip-horizontal,
-:root .fa-flip-vertical,
-:root .fa-rotate-90,
-:root .fa-rotate-180,
-:root .fa-rotate-270 {
+:root .fa-flip-horizontal, :root .fa-flip-vertical, :root .fa-rotate-90, :root .fa-rotate-180, :root .fa-rotate-270 {
   -webkit-filter: none;
   filter: none;
 }
@@ -578,8 +548,7 @@ template {
   width: 2em;
 }
 
-.fa-stack-1x,
-.fa-stack-2x {
+.fa-stack-1x, .fa-stack-2x {
   left: 0;
   position: absolute;
   text-align: center;
@@ -4565,8 +4534,7 @@ template {
   width: 1px;
 }
 
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
+.sr-only-focusable:active, .sr-only-focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -4576,54 +4544,39 @@ template {
 }
 
 @font-face {
-  font-family: Font Awesome\5 Brands;
+  font-family: Font Awesome\ 5 Brands;
   font-style: normal;
   font-weight: 400;
   src: url(fonts/fa-brands-400.eot);
-  src: url(fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),
-    url(fonts/fa-brands-400.woff2) format("woff2"),
-    url(fonts/fa-brands-400.woff) format("woff"),
-    url(fonts/fa-brands-400.ttf) format("truetype"),
-    url(fonts/fa-brands-400.svg#fontawesome) format("svg");
+  src: url(fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(fonts/fa-brands-400.woff2) format("woff2"), url(fonts/fa-brands-400.woff) format("woff"), url(fonts/fa-brands-400.ttf) format("truetype"), url(fonts/fa-brands-400.svg#fontawesome) format("svg");
 }
 .fab {
-  font-family: Font Awesome\5 Brands;
+  font-family: Font Awesome\ 5 Brands;
 }
 
 @font-face {
-  font-family: Font Awesome\5 Free;
+  font-family: Font Awesome\ 5 Free;
   font-style: normal;
   font-weight: 400;
   src: url(fonts/fa-regular-400.eot);
-  src: url(fonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),
-    url(fonts/fa-regular-400.woff2) format("woff2"),
-    url(fonts/fa-regular-400.woff) format("woff"),
-    url(fonts/fa-regular-400.ttf) format("truetype"),
-    url(fonts/fa-regular-400.svg#fontawesome) format("svg");
+  src: url(fonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(fonts/fa-regular-400.woff2) format("woff2"), url(fonts/fa-regular-400.woff) format("woff"), url(fonts/fa-regular-400.ttf) format("truetype"), url(fonts/fa-regular-400.svg#fontawesome) format("svg");
 }
 .far {
   font-weight: 400;
 }
 
 @font-face {
-  font-family: Font Awesome\5 Free;
+  font-family: Font Awesome\ 5 Free;
   font-style: normal;
   font-weight: 900;
   src: url(fonts/fa-solid-900.eot);
-  src: url(fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),
-    url(fonts/fa-solid-900.woff2) format("woff2"),
-    url(fonts/fa-solid-900.woff) format("woff"),
-    url(fonts/fa-solid-900.ttf) format("truetype"),
-    url(fonts/fa-solid-900.svg#fontawesome) format("svg");
+  src: url(fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(fonts/fa-solid-900.woff2) format("woff2"), url(fonts/fa-solid-900.woff) format("woff"), url(fonts/fa-solid-900.ttf) format("truetype"), url(fonts/fa-solid-900.svg#fontawesome) format("svg");
 }
-.fa,
-.far,
-.fas {
-  font-family: Font Awesome\5 Free;
+.fa, .far, .fas {
+  font-family: Font Awesome\ 5 Free;
 }
 
-.fa,
-.fas {
+.fa, .fas {
   font-weight: 900;
 }
 
@@ -4650,8 +4603,7 @@ template {
   padding: 0 12px;
   position: relative;
   text-align: center;
-  -webkit-transition: background-color 0.218s, border-color 0.218s,
-    box-shadow 0.218s;
+  -webkit-transition: background-color 0.218s, border-color 0.218s, box-shadow 0.218s;
   transition: background-color 0.218s, border-color 0.218s, box-shadow 0.218s;
   vertical-align: middle;
   white-space: nowrap;
@@ -4723,10 +4675,8 @@ template {
 }
 
 .gsi-material-button:not(:disabled):hover {
-  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
-    0 1px 3px 1px rgba(60, 64, 67, 0.15);
-  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
-    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
 }
 
 .gsi-material-button:not(:disabled):hover .gsi-material-button-state {
@@ -4739,8 +4689,7 @@ html {
   height: 100vh;
 }
 
-html,
-body {
+html, body {
   margin: 0;
 }
 
@@ -4760,15 +4709,10 @@ p {
   line-height: 1.3;
 }
 
-/* Amy Styles for Customer Visibility Mockup *********** */
-
-.load-history-container {
-  /* display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start; */
+strong {
+  font-weight: 500;
 }
 
-/* End of Amy Styles for Customer Visibility Mockup *********/
 .Logo-img {
   height: 2rem;
 }
@@ -4823,17 +4767,16 @@ a {
   outline: 0;
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.04);
 }
-.Button:disabled {
+.Button:disabled, .Button.Button--disabled {
   background: rgba(250, 250, 250, 0.5);
   color: #bdbfc0;
   cursor: default;
 }
-.Button:not(:disabled):hover,
-.Button:not(:disabled):focus {
+.Button:not(:disabled, .Button--disabled):hover, .Button:not(:disabled, .Button--disabled):focus {
   border-color: rgba(90, 67, 201, 0.5);
   color: #5a43c9;
 }
-.Button:not(:disabled):active {
+.Button:not(:disabled):not(.Button--disabled):active {
   background: rgba(0, 0, 0, 0.05);
   color: #383838;
 }
@@ -4843,13 +4786,12 @@ a {
   border-color: transparent;
   color: #fff;
 }
-.Button--active:not(:disabled):hover,
-.Button--active:not(:disabled):focus {
-  background: #3e3c41;
+.Button--active:not(:disabled):hover, .Button--active:not(:disabled):focus {
+  background: #3E3C41;
   border-color: transparent;
 }
 .Button--active:not(:disabled):active {
-  background: #2a282c;
+  background: #2A282C;
   color: #fff;
 }
 
@@ -4868,11 +4810,16 @@ a {
   outline: 0;
 }
 .Input:disabled {
-  background: #f5f5f6;
+  background: #f2f2f3;
   color: #999;
 }
 .Input::placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.Input-area {
+  height: 14rem;
+  padding: 0.75em;
 }
 
 .Select {
@@ -4893,7 +4840,7 @@ a {
   border-radius: 0;
 }
 .Select-select:disabled {
-  background: #f5f5f6;
+  background: #f2f2f3;
   color: #999;
 }
 .Select-select:focus {
@@ -4921,7 +4868,7 @@ a {
 }
 
 .Options-item + .Options-item {
-  margin-top: 1.6rem;
+  margin-top: 0.6rem;
 }
 
 .Option-checkbox {
@@ -5099,13 +5046,41 @@ a {
 }
 
 .Field-label {
-  /* font-weight: 500; */
-  font-weight: bold;
+  display: flex;
+  font-weight: 500;
   margin-bottom: 0.5rem;
+}
+
+.Field-flowLabel {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.Field-labelOptional {
+  font-weight: normal;
+  font-size: 80%;
+  margin: 0.2rem 0 0 0.6rem;
+  opacity: 0.75;
 }
 
 .Field-description {
   margin-bottom: 0.5rem;
+}
+.Field-description p:first-child {
+  margin-top: 0;
+}
+.Field-description p:last-child {
+  margin-bottom: 0;
+}
+
+.SourceRequestPageForm .Field {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.SourceRequestPageForm .Field-description {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .Group {
@@ -5144,7 +5119,7 @@ a {
 
 .ChoiceBoxes {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .ChoiceBox {
@@ -5157,9 +5132,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.ChoiceBox + .ChoiceBox {
-  margin-left: 3.5rem;
 }
 
 .ChoiceBox-icon {
@@ -5341,6 +5313,24 @@ p + .ScheduleEntryEdit-words {
   animation-name: fade-in;
 }
 
+.RegionSuggestion {
+  width: 90rem;
+  max-width: calc(100vw - 4rem);
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.04);
+  margin: 3.2rem auto 0;
+  background: rgba(90, 67, 201, 0.15);
+  border: 1px solid rgba(90, 67, 201, 0.1);
+  padding: 1.2rem;
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #1d0f95;
+  text-align: center;
+  animation-duration: 0.5s;
+  animation-name: fade-in;
+}
+
 .Button--subscribe {
   background: #5a43c9;
   color: rgba(255, 255, 255, 0.9);
@@ -5372,6 +5362,10 @@ p + .ScheduleEntryEdit-words {
   margin-bottom: 3rem;
 }
 
+.InstructionsImage {
+  max-width: 50%;
+}
+
 .InstructionList {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -5382,13 +5376,40 @@ p + .ScheduleEntryEdit-words {
   padding-left: 0rem;
 }
 
-.InstructionList-item {
+ul .InstructionList-item {
+  line-height: 2rem;
+  position: relative;
+  padding-left: 2.8rem;
+}
+ul .InstructionList-item + .InstructionList-item {
+  margin-top: 1.2rem;
+}
+
+ul .InstructionList-item::before {
+  content: "•";
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  position: absolute;
+  top: -0.2rem;
+  left: 0;
+}
+
+ol .InstructionList-item {
   counter-increment: instruction-counter;
   line-height: 2rem;
   position: relative;
+  padding-left: 3.4rem;
+}
+ol .InstructionList-item + .InstructionList-item {
+  margin-top: 1.2rem;
 }
 
-.InstructionList-item::before {
+ol .InstructionList-item::before {
   content: counter(instruction-counter);
   width: 2.5rem;
   height: 2.5rem;
@@ -5402,13 +5423,6 @@ p + .ScheduleEntryEdit-words {
   position: absolute;
   top: -0.3rem;
   left: 0;
-}
-
-.InstructionList-item {
-  padding-left: 3.4rem;
-}
-.InstructionList-item + .InstructionList-item {
-  margin-top: 1.2rem;
 }
 
 code {
@@ -5475,6 +5489,181 @@ code {
 
 .ErrorBox-details p:last-child {
   margin-bottom: 0;
+}
+
+.AmazonLoginButton {
+  padding: 0;
+  border: 0;
+}
+
+.DatasetIssueTypes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.IssueSection {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+}
+
+.IssueSection + .IssueSection {
+  border-top: 0;
+  margin-top: -3rem;
+}
+
+.IssueField + .IssueField {
+  margin-top: 2.4rem;
+}
+
+.IssueField-label {
+  font-weight: 500;
+}
+
+.IssueField-description {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.IssueField-value {
+  margin-top: 1rem;
+}
+
+.IssueValidation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.IssueValidation-message + .IssueValidation-message {
+  margin-top: 0.6rem;
+}
+
+.MultiUpload-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.MultiUpload-item {
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.04);
+  background: #fff;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  font-size: 80%;
+  font-weight: 500;
+}
+
+.MultiUpload-item--disabled {
+  background: #f2f2f3;
+  color: #999;
+}
+
+.MultiUpload-itemRemove {
+  border: none;
+  background: none;
+  margin-left: 0.4rem;
+}
+.MultiUpload-itemRemove:disabled {
+  color: #999;
+  cursor: default;
+}
+
+.MultiUpload-itemRemoveIcon {
+  margin: 0;
+}
+
+.SourceRequestPageForm {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.InlineButton {
+  margin-left: 0.6rem;
+}
+
+.SpecialIcon {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.6rem;
+}
+
+.StepIndicator {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.StepItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.StepItem::after {
+  position: absolute;
+  content: "";
+  border-bottom: 4px solid #bdbfc0;
+  width: 100%;
+  top: 1.9rem;
+  left: 50%;
+  z-index: 2;
+}
+.StepItem:last-child::after {
+  content: none;
+}
+
+.StepItem--completed::after {
+  border-color: #8b83c3;
+}
+
+.StepItem-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #cbcccd, #929496);
+  margin-bottom: 6px;
+  border: 1px solid #f7f7f7;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.StepItem-counter-active {
+  border-color: #5a43c9;
+  background: white;
+  color: #5a43c9;
+}
+
+.StepItem-counter-completed {
+  background: linear-gradient(to right, #5b43c9, #9f69d8);
+  color: white;
+}
+
+.StepItem-name {
+  color: #7d8082;
+}
+
+.StepItem-name-active {
+  font-weight: 500;
+  color: #5a43c9;
+}
+
+.StepItem-name-completed {
+  color: #5a43c9;
 }
 
 /*# sourceMappingURL=main.css.map */

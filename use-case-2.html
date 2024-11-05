@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Dataset Mock-Up</title>
+    <link rel="stylesheet" type="text.css" href="./scss/_normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/fonts.css" />
+    <link rel="stylesheet" href="./scss/fontawesome-all.css" />
+    <link rel="stylesheet" href="./scss/google.css" />
+  </head>
+  <body>
+    <div class="Header">
+      <div class="Logo">
+        <img class="Logo-img" src="img/precog-logo.png" />
+      </div>
+      <div class="ButtonGroup">
+        <a class="Button button" href="load-history-full.html"
+          ><i class="Icon fas fa-table"></i>Load History</a
+        >
+        <button class="Button">
+          <i class="Icon fas fa-user-circle"></i>My subscription</button
+        ><button class="Button">
+          <i class="Icon fas fa-sign-out-alt"></i>Log out
+        </button>
+      </div>
+    </div>
+    <div class="Page">
+      <div class="SourceRequestPage">
+        <div class="Container">
+          <h1>Salesforce Product Information</h1>
+          <div class="ButtonGroup">
+            <a class="Button" type="button" href="index.html">
+              <i class="Icon fas fa-arrow-left"></i>Back
+            </a>
+          </div>
+          <div class="StepIndicator">
+            <div class="StepItem StepItem--completed">
+              <div class="StepItem-counter StepItem-counter-completed">1</div>
+              <div class="StepItem-name StepItem-name-completed">
+                Product Info
+              </div>
+            </div>
+            <div class="StepItem StepItem--active">
+              <div class="StepItem-counter StepItem-counter-active">2</div>
+              <div class="StepItem-name StepItem-name-active">Use Case</div>
+            </div>
+            <div class="StepItem">
+              <div class="StepItem-counter">3</div>
+              <div class="StepItem-name">Documentation</div>
+            </div>
+          </div>
+          <div class="SourceRequestPageForm">
+            <p>
+              Having a firm understanding of the use case for your data is
+              fundamental. Precog needs a use case prompt for solving a business
+              problem in order to create the connector.
+            </p>
+            <p>
+              The <strong>test</strong> connector will not be limited by your
+              use case and you can provide additional use cases in the future.
+            </p>
+            <p>Example use case prompts:</p>
+            <ul class="SourceRequestUseCases">
+              <li class="SoureRequestUseCases-item">
+                I need to reconcile damaged products and returns with my
+                inventory.
+              </li>
+              <li class="SoureRequestUseCases-item">
+                We need lifetime product value based on marketing costs, orders,
+                returns and fulfillment costs.
+              </li>
+              <li class="SoureRequestUseCases-item">
+                I need to increase the retention rate of my placed candidates.
+              </li>
+              <li class="SoureRequestUseCases-item">
+                We want to rank our staff by how quickly and accurately they
+                process purchase orders and requisitions.
+              </li>
+              <li class="SoureRequestUseCases-item">
+                I want to monitor off-contract and on-contract spend by
+                department and time.
+              </li>
+            </ul>
+            <label class="Field"
+              ><div class="Field-label">Use case prompt</div>
+              <div class="Field-description">
+                <p>
+                  Providing a use case prompt is required for creating a new
+                  connector.
+                </p>
+              </div>
+              <textarea class="Input Input-area"></textarea></label
+            ><label class="Field"
+              ><div class="Field-label">Datasets</div>
+              <div class="Field-description">
+                <p>
+                  Which tables or datasets would you like to access with this
+                  connector?
+                </p>
+              </div>
+              <textarea class="Input Input-area"></textarea>
+            </label>
+          </div>
+          <div class="ButtonGroup">
+            <a class="Button" type="button" href="documentation-3.html">
+              <i class="Icon fas fa-arrow-right"></i>Next step
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Dataset Mock-Up</title>
+    <link rel="stylesheet" type="text.css" href="./scss/_normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/fonts.css" />
+    <link rel="stylesheet" href="./scss/fontawesome-all.css" />
+    <link rel="stylesheet" href="./scss/google.css" />
+  </head>
+  <body>
+    <div class="Header">
+      <div class="Logo">
+        <img class="Logo-img" src="img/precog-logo.png" />
+      </div>
+      <div class="ButtonGroup">
+        <a class="Button button" href="load-history-full.html"
+          ><i class="Icon fas fa-table"></i>Load History</a
+        >
+        <button class="Button">
+          <i class="Icon fas fa-user-circle"></i>My subscription</button
+        ><button class="Button">
+          <i class="Icon fas fa-sign-out-alt"></i>Log out
+        </button>
+      </div>
+    </div>
+    <div class="Page">
+      <div class="SourceRequestPage">
+        <div class="Container">
+          <h1>Salesforce Product Information</h1>
+          <div class="ButtonGroup">
+            <a class="Button" type="button" href="index.html">
+              <i class="Icon fas fa-arrow-left"></i>Back
+            </a>
+          </div>
+          <div class="StepIndicator">
+            <div class="StepItem StepItem--completed">
+              <div class="StepItem-counter StepItem-counter-completed">1</div>
+              <div class="StepItem-name StepItem-name-completed">
+                Product Info
+              </div>
+            </div>
+            <div class="StepItem StepItem--completed">
+              <div class="StepItem-counter StepItem-counter-completed">2</div>
+              <div class="StepItem-name StepItem-name-completed">Use Case</div>
+            </div>
+            <div class="StepItem StepItem--active">
+              <div class="StepItem-counter StepItem-counter-active">3</div>
+              <div class="StepItem-name StepItem-name-active">
+                Documentation
+              </div>
+            </div>
+          </div>
+          <div class="SourceRequestPageForm">
+            <p>
+              Software products will have API or developer documentation
+              containing the details of how to connect to the API. You can find
+              your API documentation by searching in the help section of
+              <strong>test</strong> or by searching the internet using the
+              search term <code>test API documentation</code>. If the
+              documentation is not publicly accessible then export and upload
+              the documentation as a PDF, OpenAPI, or Swagger document (JSON or
+              YAML).
+            </p>
+            <label class="Field"
+              ><div class="Field-label">
+                API Documentation URL<span class="Field-labelOptional"
+                  >(optional)</span
+                >
+              </div>
+              <div class="Field-description">
+                <p>
+                  Provide the URL for any publicly available API documentation.
+                </p>
+              </div>
+              <input class="Input"
+            /></label>
+            <div class="Field">
+              <div class="Field-label">
+                API Documentation Files<span class="Field-labelOptional"
+                  >(optional)</span
+                >
+              </div>
+              <div class="Field-description">
+                <p>
+                  Upload API documentation if it is provided to you as files or
+                  is not publicly available.
+                </p>
+              </div>
+              <div class="MultiUpload">
+                <ul class="MultiUpload-items"></ul>
+                <label class="Upload"
+                  ><input type="file" class="Upload-file" multiple="" />
+                  <div class="Button Upload-fileName">
+                    <span class="Upload-fileNameIcon"
+                      ><i class="Icon fas fa-upload"></i></span
+                    >Select file
+                  </div></label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="ButtonGroup">
+            <a class="Button" type="button" href="submit.html">
+              <i class="Icon fas fa-plus"></i>Create dataset
+            </a>
+            <a class="Button" type="button" href="submit.html">
+              <i class="Icon fas fa-plus"></i>Generate dataset
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Dataset Mock-Up</title>
+    <link rel="stylesheet" type="text.css" href="./scss/_normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/fonts.css" />
+    <link rel="stylesheet" href="./scss/fontawesome-all.css" />
+    <link rel="stylesheet" href="./scss/google.css" />
+  </head>
+  <body>
+    <div class="Header">
+      <div class="Logo">
+        <img class="Logo-img" src="img/precog-logo.png" />
+      </div>
+      <div class="ButtonGroup">
+        <a class="Button button" href="load-history-full.html"
+          ><i class="Icon fas fa-table"></i>Load History</a
+        >
+        <button class="Button">
+          <i class="Icon fas fa-user-circle"></i>My subscription</button
+        ><button class="Button">
+          <i class="Icon fas fa-sign-out-alt"></i>Log out
+        </button>
+      </div>
+    </div>
+    <div class="Page">
+      <div class="SourceRequestPage">
+        <div class="Container">
+          <h1>Salesforce Product Information</h1>
+          <div class="ButtonGroup">
+            <a class="Button" type="button" href="index.html">
+              <i class="Icon fas fa-arrow-left"></i>Back
+            </a>
+          </div>
+          <div class="StepIndicator">
+            <div class="StepItem StepItem--active">
+              <div class="StepItem-counter StepItem-counter-active">1</div>
+              <div class="StepItem-name StepItem-name-active">Product Info</div>
+            </div>
+            <div class="StepItem">
+              <div class="StepItem-counter">2</div>
+              <div class="StepItem-name">Use Case</div>
+            </div>
+            <div class="StepItem">
+              <div class="StepItem-counter">3</div>
+              <div class="StepItem-name">Documentation</div>
+            </div>
+          </div>
+          <div class="SourceRequestPageForm">
+            <label class="Field"
+              ><div class="Field-label">Homepage URL</div>
+              <div class="Field-description">
+                <p>
+                  Enter the homepage URL for <strong>Salesforce</strong> that
+                  gives general information about the software. For example,
+                  <code>https://www.precog.com</code> would be the homepage URL
+                  for Precog, and not <code>https://precog.cloud</code> which is
+                  the app URL.
+                </p>
+              </div>
+              <input class="Input" /></label
+            ><label class="Field"
+              ><div class="Field-label">Your Login URL</div>
+              <div class="Field-description">
+                <p>
+                  Enter the URL that you use to log into
+                  <strong>Salesforce</strong>. Having the login page helps
+                  Precog identify any hosting and geographical considerations
+                  for this connector.
+                </p>
+              </div>
+              <input class="Input"
+            /></label>
+          </div>
+          <div class="ButtonGroup">
+            <a class="Button" type="button" href="use-case-2.html">
+              <i class="Icon fas fa-arrow-right"></i>Next step
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

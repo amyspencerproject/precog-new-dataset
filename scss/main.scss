@@ -76,6 +76,10 @@ p {
   line-height: 1.3;
 }
 
+strong {
+  font-weight: 500;
+}
+
 .Logo-img {
   height: 2rem;
 }
@@ -128,18 +132,18 @@ a {
   outline: 0;
   @include shadow;
 
-  &:disabled {
+  &:disabled, &.Button--disabled {
     background: rgba(250, 250, 250, 0.5);
     color: #bdbfc0;
     cursor: default;
   }
 
-  &:not(:disabled):hover, &:not(:disabled):focus {
+  &:not(:disabled, .Button--disabled):hover, &:not(:disabled, .Button--disabled):focus {
     border-color: rgba(#5a43c9, 0.5);
     color: #5a43c9;
   }
 
-  &:not(:disabled):active {
+  &:not(:disabled):not(.Button--disabled):active {
     background: rgba(0, 0, 0, 0.05);
     color: #383838;
   }
@@ -177,13 +181,18 @@ a {
   }
 
   &:disabled {
-    background: #f5f5f6;
+    background: #f2f2f3;
     color: #999;
   }
 
   &::placeholder {
     color: rgba(#000, 0.3);
   }
+}
+
+.Input-area {
+  height: 3.5rem * 4;
+  padding: 0.75em;
 }
 
 .Select {
@@ -206,7 +215,7 @@ a {
   border-radius: 0;
 
   &:disabled {
-    background: #f5f5f6;
+    background: #f2f2f3;
     color: #999;
   }
 
@@ -233,7 +242,7 @@ a {
 }
 
 .Options-item+.Options-item {
-  margin-top: 1.6rem;
+  margin-top: 0.6rem;
 }
 
 .Option-checkbox {
@@ -391,15 +400,47 @@ a {
 }
 
 .Field-label {
+  display: flex;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
-.Field-description {
+.Field-flowLabel {
+  display: block;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
+.Field-labelOptional {
+  font-weight: normal;
+  font-size: 80%;
+  margin: 0.2rem 0 0 0.6rem;
+  opacity: 0.75;
+}
 
+.Field-description {
+  margin-bottom: 0.5rem;
+
+  p:first-child {
+    margin-top: 0;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.SourceRequestPageForm {
+
+  .Field {
+    @include vertical-group;
+  }
+
+  .Field-description {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+}
 
 .Group {
   @include vertical-group;
@@ -435,7 +476,7 @@ a {
 
 .ChoiceBoxes {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .ChoiceBox {
@@ -445,10 +486,6 @@ a {
   height: 40rem;
   min-height: 25rem;
   max-height: calc(100vh - 25rem);
-
-  & + .ChoiceBox {
-    margin-left: 3.5rem;
-  }
 
   display: flex;
   flex-direction: column;
@@ -633,6 +670,21 @@ p+.ScheduleEntryEdit-words {
   animation-name: fade-in;
 }
 
+.RegionSuggestion {
+  @include contained;
+  @include shadow;
+  margin: 3.2rem auto 0;
+  background: rgba(#5a43c9, 0.15);
+  border: 1px solid rgba(#5a43c9, 0.1);
+  padding: 1.2rem;
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #1d0f95;
+  text-align: center;
+  animation-duration: 0.5s;
+  animation-name: fade-in;
+}
+
 .Button--subscribe {
   background: #5a43c9;
   color: rgba(#fff, 0.9);
@@ -664,6 +716,10 @@ p+.ScheduleEntryEdit-words {
   @include vertical-group;
 }
 
+.InstructionsImage {
+  max-width: 50%;
+}
+
 .InstructionList {
   @include vertical-group;
   @include plain-list;
@@ -671,13 +727,42 @@ p+.ScheduleEntryEdit-words {
   padding-left: 0rem;
 }
 
-.InstructionList-item {
+ul .InstructionList-item {
+  line-height: 2rem;
+  position: relative;
+  padding-left: 2.8rem;
+
+  &+.InstructionList-item {
+    margin-top: 1.2rem;
+  }
+}
+
+ul .InstructionList-item::before {
+  content: "•";
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  position: absolute;
+  top: -0.2rem;
+  left: 0;
+}
+
+ol .InstructionList-item {
   counter-increment: instruction-counter;
   line-height: 2rem;
   position: relative;
+  padding-left: 3.4rem;
+
+  &+.InstructionList-item {
+    margin-top: 1.2rem;
+  }
 }
 
-.InstructionList-item::before {
+ol .InstructionList-item::before {
   content: counter(instruction-counter);
   width: 2.5rem;
   height: 2.5rem;
@@ -691,14 +776,6 @@ p+.ScheduleEntryEdit-words {
   position: absolute;
   top: -0.3rem;
   left: 0;
-}
-
-.InstructionList-item {
-  padding-left: 3.4rem;
-
-  &+.InstructionList-item {
-    margin-top: 1.2rem;
-  }
 }
 
 code {
@@ -757,4 +834,176 @@ code {
 
 .ErrorBox-details p:last-child {
   margin-bottom: 0;
+}
+
+.AmazonLoginButton {
+  padding: 0;
+  border: 0;
+}
+
+.DatasetIssueTypes {
+  @include plain-list;
+}
+
+.IssueSection {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+}
+
+.IssueSection+.IssueSection {
+  border-top: 0;
+  margin-top: -3rem;
+}
+
+.IssueField+.IssueField {
+  margin-top: 2.4rem;
+}
+
+.IssueField-label {
+  font-weight: 500;
+}
+
+.IssueField-description {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.IssueField-value {
+  margin-top: 1rem;
+}
+
+.IssueValidation {
+  @include plain-list;
+  margin-bottom: 3rem;
+}
+
+.IssueValidation-message+.IssueValidation-message {
+  margin-top: 0.6rem;
+}
+
+.MultiUpload-items {
+  @include plain-list;
+}
+
+.MultiUpload-item {
+  @include shadow;
+  background: #fff;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  font-size: 80%;
+  font-weight: 500;
+}
+
+.MultiUpload-item--disabled {
+  background: #f2f2f3;
+  color: #999;
+}
+
+.MultiUpload-itemRemove {
+  border: none;
+  background: none;
+  margin-left: 0.4rem;
+
+  &:disabled {
+    color: #999;
+    cursor: default;
+  }
+}
+
+.MultiUpload-itemRemoveIcon {
+  margin: 0;
+}
+
+.SourceRequestPageForm {
+  @include vertical-group;
+}
+
+.InlineButton {
+  margin-left: 0.6rem;
+}
+
+.SpecialIcon {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.6rem;
+}
+
+
+.StepIndicator {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.StepItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  &::after {
+    position: absolute;
+    content: "";
+    border-bottom: 4px solid #bdbfc0;
+    width: 100%;
+    top: 1.9rem;
+    left: 50%;
+    z-index: 2;
+  }
+
+  &:last-child::after {
+    content: none;
+  }
+}
+
+.StepItem--completed::after {
+  border-color: #8b83c3;
+}
+
+.StepItem-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #cbcccd, #929496);
+  margin-bottom: 6px;
+  border: 1px solid #f7f7f7;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.StepItem-counter-active {
+  border-color: #5a43c9;
+  background: white;
+  color: #5a43c9;
+}
+
+.StepItem-counter-completed {
+  background: linear-gradient(to right, #5b43c9, #9f69d8);
+  color: white;
+}
+
+.StepItem-name {
+  color: #7d8082;
+}
+
+.StepItem-name-active {
+  font-weight: 500;
+  color: #5a43c9;
+}
+
+.StepItem-name-completed {
+  color: #5a43c9;
 }
