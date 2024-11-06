@@ -29,7 +29,7 @@
     <div class="Page">
       <div class="SourceRequestPage">
         <div class="Container">
-          <h1>Salesforce Product Information</h1>
+          <h1>{Connector Name} Product Information</h1>
           <div class="ButtonGroup">
             <a class="Button" type="button" href="index.html">
               <i class="Icon fas fa-arrow-left"></i>Back
@@ -50,12 +50,18 @@
             </div>
           </div>
           <div class="SourceRequestPageForm">
+            <p>Do we need to ask for this again?</p>
+            <p>
+              When customers ask for a new dataset how often does it lead to
+              changes in the connector?
+            </p>
             <label class="Field"
               ><div class="Field-label">Homepage URL</div>
               <div class="Field-description">
                 <p>
-                  Enter the homepage URL for <strong>Salesforce</strong> that
-                  gives general information about the software. For example,
+                  Enter the homepage URL for
+                  <strong>{Connector Name}</strong> that gives general
+                  information about the software. For example,
                   <code>https://www.precog.com</code> would be the homepage URL
                   for Precog, and not <code>https://precog.cloud</code> which is
                   the app URL.
@@ -67,7 +73,7 @@
               <div class="Field-description">
                 <p>
                   Enter the URL that you use to log into
-                  <strong>Salesforce</strong>. Having the login page helps
+                  <strong>{Connector Name}</strong>. Having the login page helps
                   Precog identify any hosting and geographical considerations
                   for this connector.
                 </p>
