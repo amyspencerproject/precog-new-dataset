@@ -32,9 +32,14 @@
           <div class="Container">
             <h1>Which datasets do you want?</h1>
             <div class="Group">
-              <button class="Button" type="button">
+              <a class="Button button" type="button" href="">
                 <i class="Icon fas fa-arrow-left"></i>Back
-              </button>
+              </a>
+              <div class="ButtonGroup">
+                <!-- <a class="Button button" type="button" href="new-dataset.html">
+                  <i class="Icon fas fa-plus"></i>Request new datasets
+                </a> -->
+              </div>
             </div>
           </div>
           <div class="DatasetSelection">
@@ -64,13 +69,36 @@
                 ></i
                 ><input class="Input SearchFilter-input" />
               </form>
+
               <!-- <p>
-                Don't see what you were searching for?
-                <a class="" href="">Discover new datasets</a>
-              </p> -->
-              <p>
-                Don't see the dataset you want?
+                Precog discovered <strong>{2}</strong> new datasets. Still don't see the dataset you want?
                 <a class="" href="refresh.html">Discover new datasets</a>.
+              </p> -->
+
+              <p>
+                Precog discovered these new datasets. 
+              </p>
+
+              <div class="BoxList">
+                <label class="Box"
+                  ><div class="Box-group">
+                    <input class="Box-checkbox" type="checkbox" /><span
+                      class="Box-title"
+                      >UserLocation</span
+                    >
+                  </div></label
+                ><label class="Box"
+                  ><div class="Box-group">
+                    <input class="Box-checkbox" type="checkbox" /><span
+                      class="Box-title"
+                      >UserDemographics</span
+                    >
+                  </div></label
+                >
+              </div>
+              <p>
+                Still don't see the dataset you want?
+                <a class="" href="use-case-1.html"">Discover new datasets</a>.
               </p>
 
               <div class="BoxList">
@@ -122,8 +150,9 @@
                 </div>
               </div>
               <p>
-                Don't see the dataset you want?
-                <a class="" href="refresh.html">Discover new datasets</a>.
+                Still don't see the dataset you want?
+                <a class="" href="use-case-1.html">Discover new datasets</a>.
+              </p>
               </p>
             </div>
           </div>
