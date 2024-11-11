@@ -31,7 +31,7 @@
         <div class="Container">
           <h1>Use Case</h1>
           <div class="ButtonGroup">
-            <a class="Button" type="button" href="index.html">
+            <a class="Button" type="button" href="refresh.html">
               <i class="Icon fas fa-arrow-left"></i>Back
             </a>
           </div>
@@ -47,15 +47,17 @@
           </div>
           <div class="SourceRequestPageForm">
             <p>
-              Having a firm understanding of the use case for your data is
-              fundamental. Precog needs a use case prompt for solving a business
-              problem in order to create the connector.
+              In the following steps you will provide information to Precog
+              about the datasets. Precog will analyze the information you
+              provide and notify you when the new datasets are ready.
             </p>
             <p>
-              The <strong>{Connector Name}</strong> connector will not be
-              limited by your use case and you can provide additional use cases
-              in the future.
+              Having a firm understanding of the use case for your data is
+              fundamental. Precog needs a use case prompt for solving a business
+              problem in order to discover new datasets for the
+              <strong>{Connector Name}</strong> connector.
             </p>
+
             <p>Example use case prompts:</p>
             <ul class="SourceRequestUseCases">
               <li class="SoureRequestUseCases-item">
@@ -82,19 +84,18 @@
               ><div class="Field-label">Use case prompt</div>
               <div class="Field-description">
                 <p>
-                  Providing a use case prompt is required for creating a new
+                  Providing a use case prompt is required for discovering a new
                   dataset.
                 </p>
               </div>
               <textarea class="Input Input-area"></textarea></label
             ><label class="Field"
-              ><div class="Field-label">Datasets</div>
+              ><div class="Field-label">Datasets (optional)</div>
               <div class="Field-description">
                 <p>
                   Which tables or datasets would you like to access with this
                   connector?
                 </p>
-                <p>Maybe ask this at the begining?</p>
               </div>
               <textarea class="Input Input-area"></textarea>
             </label>
